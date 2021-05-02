@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_QnnCwarEEeuBxPRVfDrnsA" name="VENDEDOR" id="_QnnCwKrEEeuBxPRVfDrnsA" dataPackage="_QnnCwqrEEeuBxPRVfDrnsA" Server="Localhost 127.0.0.1" FilePath="D:/DATA_OPS_PROJETO/HARMONIZED/STG_VENDEDOR.CSV" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FooterValue="0" LimitValue="" FirstLineCaption="true" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_QnnCwqrEEeuBxPRVfDrnsA" name="default" dataManager="_QnnCwarEEeuBxPRVfDrnsA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QnnCw6rEEeuBxPRVfDrnsA" id="_EY_w0KrEEeuBxPRVfDrnsA" label="VENDEDOR">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QnnCxKrEEeuBxPRVfDrnsA" label="CustomerID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QnnCxarEEeuBxPRVfDrnsA" label="SalesPerson" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QnnCxqrEEeuBxPRVfDrnsA" label="rowguid" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QnnCx6rEEeuBxPRVfDrnsA" label="ModifiedDate" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
