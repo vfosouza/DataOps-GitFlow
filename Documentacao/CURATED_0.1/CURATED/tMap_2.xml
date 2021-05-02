@@ -1,0 +1,47 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Properties" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Name" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Expression" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_2" preview="pictures/_PawCgKrOEeuBxPRVfDrnsA-tMap_2-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Mapping links display as:">AUTO</column>
+    <column name="Temp data directory path:"></column>
+    <column name="Max buffer size (nb of rows):">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">true</column>
+    <column name="Show Information">false</column>
+    <column name="Comment"><![CDATA[]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="VENDEDOR" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="String" expression="" isNullable="true"/>
+        <entry name="OnlineOrderFlag" type="String" expression="" isNullable="true"/>
+        <entry name="CountryRegion" type="String" expression="" isNullable="true"/>
+        <entry name="TotalDue" type="Float" expression="" isNullable="true"/>
+        <entry name="CustomerID" type="Integer" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="row4" matching-mode="ALL_MATCHES" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="true" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="true" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="CustomerID" type="Integer" expression="VENDEDOR.CustomerID " isNullable="true"/>
+        <entry name="SalesPerson" type="String" expression="" isNullable="true"/>
+        <entry name="rowguid" type="String" expression="" isNullable="true"/>
+        <entry name="ModifiedDate" type="java.util.Date" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="SAIDA_VENDEDORES" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="String" expression="VENDEDOR.OrderDate " isNullable="true"/>
+        <entry name="OnlineOrderFlag" type="String" expression="VENDEDOR.OnlineOrderFlag " isNullable="true"/>
+        <entry name="CountryRegion" type="String" expression="VENDEDOR.CountryRegion " isNullable="true"/>
+        <entry name="TotalDue" type="Float" expression="VENDEDOR.TotalDue " isNullable="true"/>
+        <entry name="SalesPerson" type="String" expression="row4.SalesPerson " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null"/>
+  </mapperTable>
+</externalNode>
