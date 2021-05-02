@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_06Ej4arzEeuUZ6_mPYjBQg" name="STG_PRODUTO" id="_06Ej4KrzEeuUZ6_mPYjBQg" dataPackage="_06Ej4qrzEeuUZ6_mPYjBQg" Server="Localhost 127.0.0.1" FilePath="D:/DATA_OPS_PROJETO/HARMONIZED/STG_PRODUTOS.CSV" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_06Ej4qrzEeuUZ6_mPYjBQg" name="default" dataManager="_06Ej4arzEeuUZ6_mPYjBQg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_06Ej46rzEeuUZ6_mPYjBQg" id="_wgmCMKrzEeuUZ6_mPYjBQg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGAKr1EeuUZ6_mPYjBQg" label="ProductID" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGAar1EeuUZ6_mPYjBQg" label="Name" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGAqr1EeuUZ6_mPYjBQg" label="ProductNumber" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGA6r1EeuUZ6_mPYjBQg" label="Color" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGBKr1EeuUZ6_mPYjBQg" label="StandardCost" length="9" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGBar1EeuUZ6_mPYjBQg" label="ListPrice" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGBqr1EeuUZ6_mPYjBQg" label="Size" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGB6r1EeuUZ6_mPYjBQg" label="Weight" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGCKr1EeuUZ6_mPYjBQg" label="ProductCategoryID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGCar1EeuUZ6_mPYjBQg" label="ProductModelID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGCqr1EeuUZ6_mPYjBQg" label="SellStartDate" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGC6r1EeuUZ6_mPYjBQg" label="SellEndDate" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGDKr1EeuUZ6_mPYjBQg" label="DiscontinuedDate" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGDar1EeuUZ6_mPYjBQg" label="ThumbNailPhoto" length="43" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGDqr1EeuUZ6_mPYjBQg" label="ThumbnailPhotoFileName" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGD6r1EeuUZ6_mPYjBQg" label="rowguid" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BZuGEKr1EeuUZ6_mPYjBQg" label="ModifiedDate" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

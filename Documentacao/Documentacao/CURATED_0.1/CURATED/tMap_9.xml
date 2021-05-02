@@ -1,0 +1,49 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Properties" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Name" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Expression" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_9" preview="pictures/_PawCgKrOEeuBxPRVfDrnsA-tMap_9-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Mapping links display as:">AUTO</column>
+    <column name="Temp data directory path:"></column>
+    <column name="Max buffer size (nb of rows):">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">true</column>
+    <column name="Show Information">false</column>
+    <column name="Comment"><![CDATA[]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="copyOfSAIDA_VENDAS_REGIAO" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="UnitPrice" type="Float" expression="" isNullable="true"/>
+        <entry name="OrderQty" type="Integer" expression="" isNullable="true"/>
+        <entry name="Name" type="String" expression="" isNullable="true"/>
+        <entry name="CountryRegion" type="String" expression="" isNullable="true"/>
+        <entry name="CustomerID" type="Integer" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="row16" matching-mode="ALL_MATCHES" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="true" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="true" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="CustomerID" type="Integer" expression="copyOfSAIDA_VENDAS_REGIAO.CustomerID " isNullable="true"/>
+        <entry name="SalesPerson" type="String" expression="" isNullable="true"/>
+        <entry name="rowguid" type="String" expression="" isNullable="true"/>
+        <entry name="ModifiedDate" type="java.util.Date" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="SAIDA_VENDEDOR_MENSAL" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="java.util.Date" expression="copyOfSAIDA_VENDAS_REGIAO.OrderDate " isNullable="true"/>
+        <entry name="UnitPrice" type="Float" expression="copyOfSAIDA_VENDAS_REGIAO.UnitPrice " isNullable="true"/>
+        <entry name="OrderQty" type="Integer" expression="copyOfSAIDA_VENDAS_REGIAO.OrderQty " isNullable="true"/>
+        <entry name="Name" type="String" expression="copyOfSAIDA_VENDAS_REGIAO.Name " isNullable="true"/>
+        <entry name="CountryRegion" type="String" expression="copyOfSAIDA_VENDAS_REGIAO.CountryRegion " isNullable="true"/>
+        <entry name="SalesPerson" type="String" expression="row16.SalesPerson " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null"/>
+  </mapperTable>
+</externalNode>
